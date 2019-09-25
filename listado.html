@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<!-- <style>
+		.fixed-add {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+		}
+	</style> -->
+</head>
+
+<body class="bg-light bg2">
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 m-auto pt-5">
+				<h2 class="h3 mb-3 text-uppercase">Listado de contactos</h2>
+				<form action="">
+					<div class="form-group">
+						<input type="text" class="form-control">
+					</div>
+
+					<button class="btn-success btn">Buscar</button>
+
+				</form>
+				<div class="alto">
+					<ul id="lista-contacto" class="list-group mt-4">
+						<!--<li class="list-group-item">1</li>-->
+					</ul>
+				</div>
+				
+				<div class="mt-3 float-right">
+					<button id="btn-agregar" data-toggle="modal" data-target="#exampleModal2"
+						class="btn btn-success">Agregar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center text-success text-uppercase" id="exampleModalLabel">Registrar
+						Pago</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="col-md-10  mr-auto ml-auto mb-3">
+						<div class="card p-3 shadow-lg">
+							<form action="" id="form-pago">
+								<div class="form-group">
+									<label for="">Contacto: </label>
+									<input type="text" class="form-control" id="inp-nombre-contacto"
+										name="nombre_completo" disabled>
+
+								</div>
+								<div class="form-group">
+									<label for="">Teléfono: </label>
+									<input type="text" class="form-control" id="inp-telefono-contacto" name="telefono"
+										disabled="">
+
+								</div>
+
+								<div class="form-group">
+									<label for="">Monto a Pagar: </label>
+									<input type="number" class="form-control" id="inp-monto-pago" name="monto">
+
+								</div>
+
+							</form>
+							<div class="clearfix"></div>
+							<button id="registar-pago" type="button" class="btn btn-success">Registrar Pago</button>
+							<button type="button" class="btn btn-light border-success mb-2 mt-3">Cancelar</button>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<div class="col-md-10 m-auto mb-4">
+						<div class="card p-3 shadow-lg">
+							<h3 class="h3 text-center">Registro</h3>
+							<form>
+								<div class="form-group">
+									<label>
+										Nombres
+									</label>
+									<input type="text" id="inp-nombres" name="" class="form-control inp-form"
+										value="JC">
+								</div>
+								<div class="form-group">
+									<label>
+										Apellidos
+									</label>
+									<input type="text" id="inp-apellidos" name="" class="form-control inp-form"
+										value="RT">
+								</div>
+
+								<div class="form-group">
+									<label>
+										Telefono
+									</label>
+									<input type="text" id="inp-telefono" name="" class="form-control inp-form"
+										value="987654345">
+								</div>
+								<div class="form-group">
+									<label>
+										Correo
+									</label>
+									<input type="text" id="inp-correo" name="" class="form-control inp-form"
+										value="jtorriccelli1986@gmail.com">
+								</div>
+
+							</form>
+							<div class="clearfix"></div>
+							<button id="btn-registrar" type="button" class="btn btn-success">Registrar</button>
+							<button id="btn-limpiar" type="button"
+								class="btn btn-light border-success mb-2 mt-3">Limpiar</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/clases/usuario.js"></script>
+	<script src="js/listado.js"></script>
+</body>
+
+</html>

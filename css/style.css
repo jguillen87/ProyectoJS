@@ -1,0 +1,32 @@
+body{
+    
+}
+
+.bg-login{
+    background: url(../bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+ }
+ 
+
+.bg2{
+   background: url(https://images.iphonephotographyschool.com/22677/1120b/How-To-Blur-Background-On-iPhone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.alto{
+    height: calc(100vh - 280px);
+    overflow: auto;
+}
+
+#lista-contacto li{
+    font-weight: normal;
+    text-transform: capitalize;
+    border-left: 3px solid #28a745;
+    box-shadow: 0px 2px 6px rgba(0,0,0, .1);
+    color: #666666;
+    margin-bottom: 10px;
+}

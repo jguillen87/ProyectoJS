@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light bg2">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-4  mr-auto ml-auto pt-5">
+                <div class="card p-4 shadow-lg">
+                    <h3 class="h3 text-center mb-4 text-success text-uppercase"><b>Registrate</b></h3>
+                    <form id="datos-registro">
+                        <div class="form-group">
+                            <label>
+                                Nombres:
+                            </label>
+                            <input type="text" id="inp-nombres" name="nombres" class="form-control inp-form" value="JC">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Apellidos:
+                            </label>
+                            <input type="text" id="inp-apellidos" name="apellidos" class="form-control inp-form"
+                                value="RT">
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                Password:
+                            </label>
+                            <input type="text" id="inp-telefono" name="password" class="form-control inp-form"
+                                value="987654345">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label>
+                                Correo:
+                            </label>
+                            <input type="text" id="inp-correo" name="correo" class="form-control inp-form"
+                                value="jtorriccelli1986@gmail.com">
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
+                    <button id="btn-registrar" type="button" class="btn btn-success">Registrar</button>
+                    <button id="btn-limpiar" type="button"
+                        class="btn btn-light border-success mb-2 mt-3">Limpiar</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/registro.js"></script>
+</body>
+
+</html>

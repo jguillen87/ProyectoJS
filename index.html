@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light bg-login">
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-4 mr-auto ml-auto pt-4">
+				<div class="card p-4 shadow-lg">
+					<h3 class="h3 text-center text-success text-uppercase mb-3"><b>LOGIN</b></h3>
+					<form id="formulario">
+						<div class="form-group">
+							<label>
+								Usuario:
+							</label>
+							<input type="text" id="inp-usuario" name="correo" class="form-control inp-form"
+								value="admin">
+						</div>
+
+						<div class="form-group">
+							<label>
+								Password:
+							</label>
+							<input type="text" id="inp-telefono" name="password" class="form-control inp-form"
+								value="admin">
+						</div>
+
+
+					</form>
+					<div class="clearfix"></div>
+					<button id="btn-login" type="button" class="btn btn-success">Login</button>
+					<button id="btn-limpiar" type="button"
+						class="btn btn-light border-success mb-2 mt-3">Limpiar</button>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+
+
+	<script src="js/clases/usuario.js"></script>
+	<script src="js/login.js"></script>
+</body>
+
+</html>
